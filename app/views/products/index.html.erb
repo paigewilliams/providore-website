@@ -1,8 +1,18 @@
-<h1>Providore Fine Food's Products</h1>
+<h1>Providore Fine Food's Cheeses</h1>
+
+<h4>Find Cheeses from a country:</h4>
+
+<%= form_tag(products_path, method: :get) do %>
+  <%= text_field_tag(:search, params[:search]) %>
+  <%= submit_tag "Search" %>
+<% end %>
+
+
 <ul>
   <% @products.each do |product| %>
     <li><%= link_to product.name, product_path(product) %> </li>
   <% end %>
 </ul>
 
-<%= link_to "Add a product", new_product_path %>
+
+<%= link_to "Add a cheese", new_product_path %>

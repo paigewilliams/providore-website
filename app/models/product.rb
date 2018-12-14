@@ -12,7 +12,12 @@ class Product < ActiveRecord::Base
     .limit(3)
     )}
 
-  # def self.search(country_of_origin)
-  #   if country_of_origin.present?
-  #     Product.where('')
+  def self.search(search)
+    if search
+      product = Product.find_by(country_of_origin: search)
+      binding.pry
+    else
+      Product.all
+    end
+  end
 end

@@ -5,7 +5,7 @@ class ProductsController < ApplicationController
     render :landing
   end
   def index
-    @products = Product.all
+    @products = Product.search(params[:search])
   end
 
   def show
@@ -47,6 +47,6 @@ class ProductsController < ApplicationController
   end
 private
   def product_params
-    params.require(:product).permit(:name, :cost, :country_of_origin)
+    params.require(:product).permit(:name, :cost, :country_of_origin, :search)
   end
 end
