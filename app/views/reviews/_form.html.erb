@@ -1,0 +1,11 @@
+<%= render('layouts/errors', :object => @review) %>
+
+<%= form_for [@product, @review] do |f| %>
+  <%= f.label :author %>
+  <%= f.text_field :author %><br>
+  <%= f.label :content_body %><br>
+  <%= text_area_tag(:content_body, "I love this product!", size: "24x6") %><br>
+  <%= f.label :rating %>
+  <%= select_tag(:rating, options_for_select([['1', 1], ['2', 2], ['3', 3], ['4', 4], ['5', 5]])) %><br>
+  <p><%= f.submit %></p>
+<% end %>
