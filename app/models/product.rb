@@ -14,10 +14,9 @@ class Product < ActiveRecord::Base
 
   def self.search(search)
     if search
-      product = Product.find_by(country_of_origin: search)
-      binding.pry
+      where('country_of_origin LIKE ?', "%#{search}%")
     else
-      Product.all
+      all
     end
   end
 end
