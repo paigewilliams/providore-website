@@ -1,5 +1,6 @@
 class ProductsController < ApplicationController
   def landing
+    @recent_products = Product.three_most_recent
     render :landing
   end
   def index

@@ -5,3 +5,11 @@
 <p>Located in Northeast Portland, Providore Fine Foods is a neighborhood fixture for daily customers and a dining and shopping destination for locals and visitors alike. You can visit us for elevated prepared foods and gourmet groceries, or spend an afternoon dining and enjoying a glass of beer or wine.</p>
 
 <p>Anchor tenant Pastaworks and their Mediterranean rotisserie Arrosto, are joined by Flying Fish Co. + Oyster Bar, The Meat Monger, Rubinette Produce Market, Little T Baker, and Hilary Horvath Flowers to create an eating and grocery experience without parallel.</p>
+
+<%= link_to "Products", products_path %>
+
+<h4>Newly Added Products</h4>
+
+<% @recent_products.each do |product| %>
+  <li><%= link_to product.name, product_path(product) %></li>
+<% end %>
