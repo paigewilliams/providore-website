@@ -13,3 +13,9 @@
 <% @recent_products.each do |product| %>
   <li><%= link_to product.name, product_path(product) %></li>
 <% end %>
+
+<h4>Our most reviewed products</h4>
+
+<% @reviewed_products.each do |product| %>
+  <li><%= link_to product.name, product_path(product) %></li>
+<% end %>
