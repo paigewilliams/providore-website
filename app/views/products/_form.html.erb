@@ -6,6 +6,24 @@
   <%= f.label :cost %>
   <%= f.number_field :cost %><br>
   <%= f.label :country_of_origin %>
-  <%= f.text_field :country_of_origin %><br>
+  <%= f.select(:country_of_origin, options_for_select([
+  ['United States', "US"],
+  ['United Kingdom', "GB"],
+  ['Austria', "AT"],
+  ['Belgium', "BE"],
+  ['France', "FR"],
+  ['Germany', "DE"],
+  ['Greece', "GR"],
+  ['Italy', "IT"],
+  ['Netherlands', "NL"],
+  ['Portugal', "PT"],
+  ['Spain', "ES"],
+  ['Denmark', "DK"],
+  ['Finland', "FI"],
+  ['Ireland', "IS"],
+  ['Norway', "NO"],
+  ['Sweeden', "SE"],
+  ['Switzerland', "CH"]
+  ])) %><br>
   <%= f.submit %>
 <% end %>

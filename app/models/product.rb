@@ -11,4 +11,8 @@ class Product < ActiveRecord::Base
     .order("reviews_count DESC")
     .limit(3)
     )}
+
+  # def self.search(country_of_origin)
+  #   if country_of_origin.present?
+  #     Product.where('')
 end
