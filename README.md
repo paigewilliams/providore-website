@@ -53,4 +53,4 @@ If you have any issues or questions, please email me at paw145@humboldt.edu
 
 ## Legal
 
-Copyright (c) 2018 Phil Mass
+Copyright (c) 2018 Paige Williams
