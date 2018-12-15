@@ -1,6 +1,6 @@
-<h1>Providore Fine Food's Cheeses</h1>
+<h1>Providore Fine Food's Inventory</h1>
 
-<h4>Find Cheeses from a country:</h4>
+<h4>Find Products by country:</h4>
 
 <%= form_tag(products_path, method: :get) do %>
   Country <%= text_field_tag :search, params[:search] %>
@@ -15,5 +15,5 @@
 </ul>
 
 
-<%= link_to "Add a cheese", new_product_path %><br>
+<%= link_to "Add a Product", new_product_path %><br>
 <%= link_to "Back", root_path %>

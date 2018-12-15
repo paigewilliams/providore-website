@@ -6,9 +6,10 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-Product.create!([
-  {"name": "Gruyere", "cost": "9.00", "country_of_origin": "France"},
-  {"name": "Piave Vecchio", "cost": "7.00", "country_of_origin": "Italy"},
-  {"name": "L'amuse Brabander", "cost": "13.00", "country_of_origin": "Holland"},
-  {"name": "Coastal Cheddar", "cost": "6.00", "country_of_origin": "England"}
-  ])
+Product.destroy_all
+
+50.times do |index|
+  Product.create!(name: Faker::Food.ingredient, cost: Faker::Number.digit, country_of_origin: Faker::Address.country)
+end
+
+p "Created #{Product.count} products"

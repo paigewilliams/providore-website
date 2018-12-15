@@ -8,7 +8,7 @@
 
 ## Description
 
-This is a mock website for Providore Fine Foods built with Ruby on Rails. There is full CRUD functionality for both products (cheeses) and reviews of products. The homepage also displays the three most recently added products and the three most reviewed products. The user also has the ability to search from products based off of country of origin. [Providore Fine Foods](https://www.providorefinefoods.com/) is an actual market in Portland, OR.
+This is a mock website for Providore Fine Foods built with Ruby on Rails. There is full CRUD functionality for both products and reviews of products. The homepage also displays the three most recently added products and the three most reviewed products. The user also has the ability to search from products based off of country of origin. [Providore Fine Foods](https://www.providorefinefoods.com/) is an actual market in Portland, OR.
 
 ## Specs  
 

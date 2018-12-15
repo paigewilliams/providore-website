@@ -9,14 +9,14 @@
 </div>
 <div class="row">
   <div class="col-md-6">
-    <h4>Newly Added Cheeses</h4>
+    <h4>Newly Added Products</h4>
 
     <% @recent_products.each do |product| %>
     <li><%= link_to product.name, product_path(product) %></li>
     <% end %>
   </div>
   <div class="col-md-6">
-    <h4>Our most reviewed Cheeses</h4>
+    <h4>Our most reviewed Products</h4>
 
     <% @reviewed_products.each do |product| %>
     <li><%= link_to product.name, product_path(product) %></li>
@@ -24,6 +24,6 @@
   </div>
 </div>
 <div class="row">
-  <%= link_to "All Cheeses", products_path %>
+  <%= link_to "All Products", products_path %>
 
 </div>
