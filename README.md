@@ -16,17 +16,17 @@ View specs [here](https://github.com/paigewilliams/providore-website/tree/master
 
 ## Objectives
 
-- [] Does the project include thorough unit and integration test coverage?
+- [ ] Does the project include thorough unit and integration test coverage?
 - [x] Do routes follow proper convention, including a root route?
 - [x] Is application logic in the models (not the controller)?
 - [x] Does the project have at least three scopes, including the ones specified above? Are the scopes properly utilized to show view logic.
-- [] Is the database properly seeded with the Faker gem?
+- [x] Is the database properly seeded with the Faker gem?
 - [x] Are success and error flash messages used correctly?
 - [x] Are form and route helpers present and functioning?.
 - [x] Does the app use the asset pipeline for Bootstrap/CSS?
-- [] Is the application in a polished, portfolio-ready state?
-- [] Does the project demonstrate an understanding of this week's concepts? If prompted, are you able to discuss your code with an instructor using correct terminology?
-- [] Was all required functionality in place by the Friday deadline?
+- [ ] Is the application in a polished, portfolio-ready state?
+- [ ] Does the project demonstrate an understanding of this week's concepts? If prompted, are you able to discuss your code with an instructor using correct terminology?
+- [ ] Was all required functionality in place by the Friday deadline?
 
 ## Setup and Installation
 
